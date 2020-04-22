@@ -10,8 +10,8 @@ def input_to_index(input)
    input.to_i - 1
 end
 
-def move(board, index, current_player = "X")
-  board[index] = current_player
+def move(board, index, token)
+  board[index] = token
   return board
 end
 
@@ -32,7 +32,7 @@ def turn(board)
   input = gets.strip
   index = input_to_index(input)
 if valid_move?(board, index)
-  move(board, index, current_player)
+  move(board, index, token)
   display_board(board)
 else
   turn(board)
