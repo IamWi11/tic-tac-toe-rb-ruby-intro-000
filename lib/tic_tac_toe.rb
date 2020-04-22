@@ -50,7 +50,7 @@ def turn_count(board)
   turns
 end
 
-def current_player(board, index)
+def current_player(board)
   if turn_count(board) == 1 then
     player = "O"
   else
