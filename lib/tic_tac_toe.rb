@@ -38,7 +38,7 @@ else
 end
   display(board)
 end
-  
+
 
 
 def turn_count(board)
